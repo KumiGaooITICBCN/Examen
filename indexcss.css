@@ -1,0 +1,211 @@
+#header {
+  display: flex;
+  width: 99.7%;
+  border-style: groove;
+  justify-content: right;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+.menu {
+  font-size: 1.5vw;
+  margin-right: 1vw;
+}
+body {
+  margin: 0;
+}
+
+#ejercicio {
+  margin-left: 11vw;
+  font-size: 1.8vw;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 26% 26% 20% 26%;
+  grid-template-rows: 10vw 10vw 8vw 8vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.element {
+  justify-content: center;
+  display: flex;
+  contain: content;
+}
+.elTitle {
+  font-size: 1.7vw;
+}
+.elText {
+  font-size: 1.4vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  margin-top: 0;
+}
+.e1 {
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 1;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.e2 {
+  background-color: green;
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin: 10px;
+  align-items: center;
+}
+.e3 {
+  background-color: gray;
+  grid-column: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.e4 {
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 4;
+  grid-row-start: 1;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+.link {
+  font-size: 1.5vw;
+}
+.elImg {
+  margin-bottom: 3vh;
+  border-color: black;
+  border-style: groove;
+  border-width: 1px;
+  width: 24vw;
+}
+.e5 {
+  background-color: pink;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 4;
+  margin: 10px;
+}
+#flex {
+  display: flex;
+  justify-content: right;
+}
+#imagenGrande {
+  overflow: hidden;
+  width: 100%;
+}
+#title {
+  color: white;
+  position: absolute;
+  margin-right: 1vw;
+  font-size: 3vw;
+}
+#footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1.3vw;
+}
+.menu:hover {
+  color: red;
+}
+@media screen and (max-width: 576px) {
+  #header {
+    background-color: black;
+    color: white;
+    width: 98.8%;
+    display: block;
+    text-align: center;
+  }
+  .menu {
+    font-size: 1.5vh;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 32vh 8vh 12vh;
+    margin-left: 4vh;
+    margin-bottom: 2vh;
+  }
+  .element {
+    margin: 0;
+  }
+  .e1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+  }
+  .e4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+  }
+  .e2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .e5 {
+    grid-column: 2;
+    grid-row: 3;
+    align-items: center;
+  }
+  .e3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+  }
+  .link {
+    font-size: 1.5vh;
+  }
+  .elTitle {
+    font-size: 1.8vh;
+  }
+  .elText {
+    font-size: 1.5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-top: 0;
+  }
+  .elImg {
+    margin-bottom: 3vh;
+    border-color: black;
+    border-style: groove;
+    border-width: 1px;
+    width: 28vh;
+  }
+  #flex {
+    display: flex;
+    justify-content: right;
+  }
+  #imagenGrande {
+    overflow: hidden;
+    width: 100vw;
+  }
+  #title {
+    color: white;
+    position: absolute;
+    margin-right: 1vw;
+    font-size: 3vw;
+  }
+  #ejercicio {
+    font-size: 2vh;
+  }
+  #footer {
+    font-size: 1.5vh;
+    justify-content: space-evenly;
+  }
+}
